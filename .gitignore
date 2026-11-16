@@ -1,0 +1,11 @@
+# Java / IDE
+*.class
+*.jar
+out/
+build/
+target/
+.gradle/
+.idea/
+*.iml
+.DS_Store
+.vscode/
