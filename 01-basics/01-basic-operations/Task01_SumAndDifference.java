@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * ДЗ №2 — Основы основ в Java
  * Раздел: 01-basic-operations
@@ -9,6 +11,17 @@
  */
 public class Task01_SumAndDifference {
     public static void main(String[] args) {
-        // TODO: Реализация задачи.
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Введите первое число: ");
+        int firstNumber = sc.nextInt();
+
+        System.out.print("Введите второе число: ");
+        int secondNumber = sc.nextInt();
+
+        int toAdd = firstNumber + secondNumber;
+        int toDeduct = firstNumber - secondNumber;
+
+        System.out.println("Сумма: " + toAdd);
+        System.out.println("Разность: " + toDeduct);
     }
 }
