@@ -18,10 +18,16 @@ public class Task01_SumAndDifference {
         System.out.print("Введите второе число: ");
         int secondNumber = sc.nextInt();
 
-        int toAdd = firstNumber + secondNumber;
-        int toDeduct = firstNumber - secondNumber;
+        int toAdd = calculateAdd(firstNumber, secondNumber);
+        int toDeduct = calculateDeduct(firstNumber, secondNumber);
 
         System.out.println("Сумма: " + toAdd);
         System.out.println("Разность: " + toDeduct);
+    }
+    public static int calculateAdd(int firstNumber, int secondNumber) {
+        return firstNumber + secondNumber;
+    }
+    public static int calculateDeduct(int firstNumber, int secondNumber) {
+        return firstNumber - secondNumber;
     }
 }
